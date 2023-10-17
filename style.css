@@ -1,0 +1,234 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.kattsidan {
+  margin-right: auto;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  margin-left: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.button1 {
+  display: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.button1:hover {
+  transform: scale(1.1);
+  transition: transform 150ms ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: transform 150ms ease-in-out;
+}
+
+.hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  height: 20px;
+  display: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.hamburgerAnimation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  transform: translate(100px, 0px);
+  background-color: #333;
+  height: 100px;
+  width: 100px;
+  padding: 40px;
+  transition: transform 300ms;
+}
+
+.hamburgerAnimation a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.hamburgerMenu:hover .hamburgerAnimation {
+  transform: translate(-130px, 0px);
+}
+
+.searchIcon {
+  display: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+  padding: 40px;
+  background-color: #f1f1f1;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.section1Text {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.section1 img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.section1 h2 {
+  font-size: 2.5rem;
+}
+
+.catGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.catGrid img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.katt2 {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.katt1 {
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  .button1 {
+    display: grid;
+  }
+
+  body {
+    font-size: 1.1rem;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section1 img {
+    width: 70%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hamburgerMenu {
+    margin-left: auto;
+    margin-left: 0;
+  }
+
+  .catGrid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchIcon {
+    display: grid;
+    margin-left: auto;
+  }
+}
